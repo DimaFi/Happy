@@ -108,7 +108,7 @@ margin-top: var(--gallery-gap);
 }
 
 .text-block__h {
-    font-size: 2rem;
+    font-size: 5rem;
     line-height: 2.4rem;
     color: var(--color-header);
 }
@@ -118,7 +118,8 @@ margin-top: var(--gallery-gap);
 }
 
 .text-block__p {
-    line-height: 1.75rem;
+    font-size: 3rem;
+    line-height: 6rem;
 }
 
 .gallery__item2 {
@@ -141,4 +142,10 @@ margin-top: var(--gallery-gap);
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.text-block__h2 {
+    font-size: 10rem;
+    line-height: 11rem;
+    color: var(--color-header);
 }
