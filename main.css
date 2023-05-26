@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+	--index: calc(1vw + 1vh);
+	--color-header: #f4efec;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+
+@font-face {
+	font-family: raleway-c;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: outfit-c;
+	src: url(../fonts/outfit-regular.woff2);
+}
+
+@font-face {
+	font-family: comic-sans-ms;
+	src: url(../fonts/Comic-Sans-MS.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: outfit-c;
+}
+
+/**/
+
+.content, .hero, .main-header, .gallery > * {
+    will-change: transform;
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: 50px;
+    color:#fafafa;
+    font-family:raleway-c;
+    overflow-x: hidden;
+}
+
+.hero {
+	width: calc(var(--index) * 28);
+	position: absolute;
+	left: 45vw;
+	top: 22vh;
+	z-index: -1;
+}
+
+.main-header{
+    font-family: comic-sans-ms;
+    height: 100vh;
+}
+
+.container {
+    padding: 0 7vw;
+}
+
+.main-title {
+    font-size: calc(var(--index) * 8);
+    position: absolute;
+    width: min-content;
+    bottom: 15vh;
+    line-height: .9;
+}
+
+.gallery {
+    display: flex;
+    padding: calc(var(--index) * 8) 0;
+}
+
+.gallery > * {
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery__item {
+max-width: calc(var(--index) * 21);
+margin-bottom: var(--gallery-gap);
+max-height: 180vh;
+border-radius: 8px;
+}
+
+.gallety__center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.gallery__left{
+margin-top: calc(var(--gallery-gap) * 1.75);
+}
+
+
+.gallery__right .gallery__item{
+margin: 0;
+margin-top: var(--gallery-gap);
+}
+
+.text-block {
+    color: var(--color-text);
+    position: relative;
+}
+
+.text-block__h {
+    font-size: 10rem;
+    line-height: 2.4rem;
+    color: var(--color-header);
+}
+
+.text-block:hover {
+    color: blanchedalmond;
+}
+
+.text-block__p {
+    font-size: 3rem;
+    line-height: 6rem;
+}
+
+.gallery__item2 {
+    max-width: calc(var(--index) * 21);
+    margin-bottom: var(--gallery-gap);
+    max-height: 180vh;
+    border-radius: 8px;
+}
+
+.main-title2 {
+    font-size: calc(var(--index) * 8);
+    position: absolute;
+    width: min-content;
+    bottom: 15vh;
+    line-height: .9;
+}
+
+.gallery__center{
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-block__h2 {
+    font-size: 20rem;
+    line-height: 21rem;
+    color: var(--color-header);
+}
