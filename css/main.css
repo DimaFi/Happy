@@ -70,7 +70,7 @@ body{
 
 .gallery {
     display: flex;
-    padding: calc(var(--index) * 8) 0;
+    padding: calc(var(--index) * 12) 0;
 }
 
 .gallery > * {
@@ -108,7 +108,7 @@ margin-top: var(--gallery-gap);
 }
 
 .text-block__h {
-    font-size: 10rem;
+    font-size: 6rem;
     line-height: 2.4rem;
     color: var(--color-header);
 }
@@ -145,7 +145,7 @@ margin-top: var(--gallery-gap);
 }
 
 .text-block__h2 {
-    font-size: 20rem;
-    line-height: 21rem;
+    font-size: 10rem;
+    line-height: 11rem;
     color: var(--color-header);
 }
