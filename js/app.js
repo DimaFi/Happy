@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 
-
+if (ScrollTrigger.isTouch !== 1) {
     ScrollSmoother.create({
         wrapper: '.wrapper',
         content: '.content',
@@ -33,7 +33,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
         })
     })
 
-    let itemsR = gsap.utils.toArray('.gallery__right .gallery__item')
+    let itemsR = gsap.utils.toArray('.gallery__right .gallery__item .gallery__center')
 
     itemsR.forEach(item => {
         gsap.fromTo(item, {x: 50, opacity: 0}, {
@@ -46,3 +46,12 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
             }
         })
     })
+
+    ScrollSmoother.create({
+        wrapper: '.wrapper',
+        content: '.content',
+        smooth: 1.5,
+        effects: true
+    })
+}
+
